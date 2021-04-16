@@ -4,7 +4,7 @@ import Dropdown from "./components/Dropdown";
 function App() {
   return (
     <div className="App">
-      <Dropdown he="sem" />
+      <Dropdown he="heading" />
     </div>
   );
 }

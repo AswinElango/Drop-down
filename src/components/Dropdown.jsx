@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import sem from "./Sem";
 import cie from "./Cie";
+import heading from "./Heading";
 
 function Dropdown(props) {
   let h;
@@ -11,6 +12,8 @@ function Dropdown(props) {
     h = sem;
   } else if (choose === "cie") {
     h = cie;
+  } else if (choose === "heading") {
+    h = heading;
   }
 
   const handleChange = (e) => {
