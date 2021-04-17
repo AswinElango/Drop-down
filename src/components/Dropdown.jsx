@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import sem from "./Sem";
 import cie from "./Cie";
-import heading from "./Heading";
+import cse from "./Cse";
 
 function Dropdown(props) {
   let h;
@@ -12,23 +12,33 @@ function Dropdown(props) {
     h = sem;
   } else if (choose === "cie") {
     h = cie;
-  } else if (choose === "heading") {
-    h = heading;
   }
 
   const handleChange = (e) => {
     setSelectedValue(e.target.value);
   };
-  console.log(selectedValue);
+  let a = selectedValue;
+  let b = parseInt(a) - 1;
+  console.log(b);
+
+  console.log(cse[b]);
+
+  let opt = cse.map((it) => <option key={it}>{it}</option>);
 
   let optionItems = h.map((item) => (
     <option key={item.id}>{item.value}</option>
   ));
 
+  // console.log(sub);
+
   return (
     <div>
       <select value={selectedValue} onChange={handleChange}>
         {optionItems}
+      </select>
+      <br />
+      <select value={selectedValue} onChange={handleChange}>
+        {opt}
       </select>
     </div>
   );

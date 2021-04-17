@@ -1,5 +1,9 @@
 export default [
   {
+    id: 0,
+    value: "-- Select Semester --"
+  },
+  {
     id: 1,
     value: "1"
   },
