@@ -1,10 +1,12 @@
 import "./styles.css";
-import Dropdown from "./components/Dropdown";
+// import Dropdown from "./components/Dropdown";
+import Drop from "./components/Drop";
 
 function App() {
   return (
     <div className="App">
-      <Dropdown he="sem" />
+      {/* <Dropdown he="sem" /> */}
+      <Drop />
     </div>
   );
 }
