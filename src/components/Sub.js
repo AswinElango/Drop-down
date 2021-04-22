@@ -728,7 +728,7 @@ const ft = [
   ]
 ];
 
-exports.getSubjects = function (dept) {
+export const getSubjects = (dept) => {
   if (dept === "cse") return cse;
   if (dept === "ece") return ece;
   if (dept === "eee") return eee;
